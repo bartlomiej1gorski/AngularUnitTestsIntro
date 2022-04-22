@@ -10,7 +10,7 @@ import { By } from '@angular/platform-browser';
 import { LoadingComponent } from 'src/app/components/shared/loading/loading.component';
 import { MockModule } from 'ng-mocks';
 
-fdescribe('TodoListComponent', () => {
+describe('TodoListComponent', () => {
   let component: TodoListComponent;
   let fixture: ComponentFixture<TodoListComponent>;
   let todoService: jasmine.SpyObj<TodoListService>;
