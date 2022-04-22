@@ -8,8 +8,8 @@ describe('VoteComponent', () => {
     let component: VoteComponent;
     let fixture: ComponentFixture<VoteComponent>;
 
-    beforeEach(() => {
-        TestBed.configureTestingModule({
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
             declarations: [
                 VoteComponent,
                 MockComponent(VoteButtonComponent)
