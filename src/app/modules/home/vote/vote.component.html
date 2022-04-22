@@ -1,0 +1,11 @@
+<div class="row col-12 text-center">
+    <h1>Vote count</h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <button class="btn btn-warning decrement" (click)="decrement()">-</button>
+        <span class="count mx-3">{{ votes }}</span>
+        <button class="btn btn-primary increment" (click)="increment()">+</button>
+    </div>
+</div>
+
+<hr>
+<app-vote-button></app-vote-button>

@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-6 offset-3">
+        <form [formGroup]="todoItemForm" (ngSubmit)="submit()">
+            <div class="row mb-3">
+                <label for="name" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="name" type="text" formControlName="name">
+                    <div class="invalid-feedback" *ngIf="
+                        todoItemForm.controls['name'].touched && 
+                        todoItemForm.controls['name']?.errors?.['required'] === true">
+                        Name is required
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="description" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="description" type="text" formControlName="description">
+                    <div class="invalid-feedback" *ngIf="
+                    todoItemForm.controls['description'].touched &&
+                    todoItemForm.controls['description']?.errors?.['required'] === true">
+                        Description is required
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+</div>
