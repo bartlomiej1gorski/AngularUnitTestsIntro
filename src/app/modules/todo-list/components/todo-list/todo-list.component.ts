@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { catchError, ignoreElements, Observable, of } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { TodoList } from '../../models/todo.model';
 import { TodoListService } from '../../services/todo-list.service';
 
