@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TodoItem } from '../../models/todo-item.model';
 import { TodoListService } from '../../services/todo-list.service';
@@ -10,10 +10,10 @@ import { TodoListService } from '../../services/todo-list.service';
   styleUrls: ['./add-todo-item.component.scss']
 })
 export class AddTodoItemComponent {
-  todoItemForm: FormGroup;
+  todoItemForm: UntypedFormGroup;
 
   constructor(
-    fb: FormBuilder,
+    fb: UntypedFormBuilder,
     private router: Router,
     private todoListService: TodoListService
   ) {
